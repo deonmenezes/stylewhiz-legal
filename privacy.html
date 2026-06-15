@@ -26,7 +26,8 @@
 <p>We collect the following data, always directly from you inside the app:</p>
 <ul>
   <li><strong>Account data</strong> — your email address and display name, provided when you sign up.</li>
-  <li><strong>Style preferences</strong> — gender, age range, and style "vibes" you select during onboarding, plus styling attributes (skin undertone, body type) detected from your photo.</li>
+  <li><strong>Style profile</strong> — the gender, age range, and style "vibes" you select during onboarding; styling attributes (skin undertone, skin tone, body shape) that may be detected from your photo and which you can confirm or change; and optional body details you choose to enter (height, weight, and clothing/shoe sizes). This is used only to personalize your styling recommendations.</li>
+  <li><strong>Activity</strong> — the items you favorite, the looks you save, and your swipe history, so your recommendations improve and your saved content stays with your account across devices.</li>
   <li><strong>Photos (selfies)</strong> — the selfie photographs you deliberately capture or choose from your photo library. See Section 3.</li>
 </ul>
 <p>We do not collect location, contacts, browsing history, advertising identifiers, or any data from third-party sources.</p>
@@ -51,10 +52,10 @@
 <p>No other third party ever receives your photo or face data.</p>
 
 <h2>Section 6 — Face Data: Retention and Deletion</h2>
-<p>Your photo is retained <strong>only while your account remains active</strong>. You can replace your photo at any time from Profile. Deleting your account in <em>Profile → Delete Account</em> permanently removes your account, your photos, and all styling data from our servers. Photos sent to Google’s Gemini service are processed transiently and are not retained by Google after your try-on image is generated.</p>
+<p>Your data is retained <strong>only while your account remains active</strong>. You can replace your photo at any time from Profile. Deleting your account in <em>Profile → Delete Account</em> permanently and immediately removes your account and all of your profile and styling data (email, name, style profile, favorites, saved looks, and swipe history) from our database. Selfie images are stored under randomized, non-identifying filenames and are no longer associated with you once your account is deleted. Photos sent to Google’s Gemini service are processed transiently and are not retained by Google after your try-on image is generated.</p>
 
 <h2>Section 7 — Storage and Security</h2>
-<p>All data is transmitted over HTTPS (TLS). Photos and account data are stored in access-controlled private cloud storage (Amazon Web Services, United States). Access is restricted to the systems that operate the styling features described above.</p>
+<p>All data is transmitted over HTTPS (TLS). Your selfie photos are stored in access-controlled private Amazon Web Services (S3) storage in the United States. Your account and style-profile data (email, display name, style preferences, styling attributes, body details, favorites, saved looks, and swipe history) are stored in our managed PostgreSQL database hosted by <strong>Supabase</strong>, protected by row-level security so each account can access only its own data. Access is restricted to the systems that operate the styling features described above.</p>
 
 <h2>Section 8 — Your Explicit Permission and Your Choices</h2>
 <p>StyleWhiz AI never uploads or shares your photo without asking first. Before your first upload or try-on, an in-app permission screen explains exactly <strong>what is shared</strong> (the selfie you chose and the catalog outfit image), <strong>who receives it</strong> (our Amazon Web Services servers and Google’s Gemini AI service), and <strong>how long it is kept</strong>. Nothing is sent if you decline. You can withdraw consent at any time by replacing or removing your photo, or by deleting your account in Profile.</p>
